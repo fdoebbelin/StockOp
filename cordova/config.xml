@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="fdoebbelin.stockop" version="0.1.0">
+  <name>Stock Operations</name>
+  <description>
+    Tabris.js App for barcode based stock operations.
+  </description>
+  <author email="frd@doebbelin.net">
+    Fritz-Rainer Doebbelin
+  </author>
+  <preference name="EnableDeveloperConsole" value="$IS_DEBUG" />
+  <plugin name="tabris-plugin-barcode-scanner" spec="../" />
+
+  <edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge">
+    <string>Barcode scanner requires camera to be able to scan barcodes.</string>
+  </edit-config>
+
+</widget>
